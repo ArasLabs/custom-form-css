@@ -75,7 +75,7 @@ For more information on contributing to this project, another Aras Labs project,
 
 ## Credits
 
-TODO: Write credits if others contributed to the project
+Created by Eli Donahue for Aras Labs. @EliJDonahue
 
 ## License
 
