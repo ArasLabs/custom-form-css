@@ -1,0 +1,179 @@
+/*
+  Aras Labs
+  Eli Donahue - 10/27/16
+
+  Custom CSS to override the default Aras form CSS
+  All sys_f_* classes can be found in Innovator\Client\styles\default.css
+*/
+
+/* Custom input CSS */
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+    background: rgba(255, 255, 255, .1);
+    border: none;
+    border-radius: 4px;
+    margin: 0;
+    outline: 0;
+    padding: 7px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    border: 1px solid #D9DEDF;
+    color: #000;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+textarea:focus,
+select:focus {
+    background: #d2d9dd;
+}
+
+select {
+    -webkit-appearance: menulist-button;
+    height: 30px;
+}
+
+input[type="submit"],
+input[type="button"],
+input[type="image"] {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background: #3668b1;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+}
+
+input[type="image"] {
+    padding: 5px 5px 5px 5px;
+    border-radius: 0px 4px 4px 0px;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="image"] {
+    background: #3668b1;
+}
+
+
+/* Custom class CSS */
+
+.my_label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.my_select {
+    background: rgba(255, 255, 255, .1);
+    border: none;
+    border-radius: 4px;
+    margin: 0;
+    outline: 0;
+    padding: 7px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    border: 1px solid #D9DEDF;
+    color: #000;
+
+    -webkit-appearance: menulist-button;
+    height: 30px;
+}
+
+.owned_by_id,
+.managed_by_id,
+.sys_f_input_calendar {
+    border-radius: 4px 0px 0px 4px;
+}
+
+.info_group {
+    background: #E8EEEF;
+    color: #000;
+    height: 330px;
+    width: 185px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 15px;
+    border-radius: 15px 15px 15px 0px;
+    border: 1px solid #D9DEDF;
+}
+
+.user_group {
+    height: 330px;
+    width: 185px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 15px;
+    border-radius: 15px 15px 15px 0px;
+    border: 2px solid #D9DEDF;
+}
+
+.sys_f_span_select {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+.my_state {
+    display: block;
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+/* Custom CSS by ID */
+
+/* Style for default form title */
+#label_span {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/* Style for custom icons added by CustomFormCSS import package */
+#myIcon {
+  visibility: hidden;
+  height: 80px;
+  width: 80px;
+  position:absolute;
+  top:40px;
+  left:10px;
+  z-index:2;
+}

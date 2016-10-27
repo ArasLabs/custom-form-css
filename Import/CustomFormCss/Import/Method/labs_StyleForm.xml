@@ -1,0 +1,94 @@
+﻿<AML>
+ <Item type="Method" id="E604744175D24C45846C5BDD97250A92" action="add">
+  <comments>Modifies classes and attributes on form elements to override default styles</comments>
+  <execution_allowed_to keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</execution_allowed_to>
+  <method_code><![CDATA[// Aras Labs
+// Eli Donahue - 10/27/16
+//
+// Modify classes and attributes on form elements to override default styles 
+// Includes helpful functions to reduce repeated code
+// Requires a custom CSS to be defined on the form body tab and custom images
+
+////////////////////// Configurable variables /////////////////////////////
+
+    var imgRoot = '../customer/svg/';
+    var searchBtn = imgRoot + 'search.svg';
+    var dateBtn = imgRoot + 'calendar.svg';
+
+////////////////////// Helpful functions /////////////////////////////
+    
+    // function to replace a class name for specified elements
+    replaceClass = function(els, oldClass, newClass) 
+    {
+        while (els.length > 0)
+        {
+            els[0].className = els[0].className.replace(new RegExp('(?:^|\\s)'+ 
+                                    oldClass + '(?:\\s|$)'), newClass);
+        }
+    };
+    
+    // sets a specific attribute for all elements in a collection
+    setAttributeOnAll = function(els, attrName, attrVal)
+    {
+        for (var i=0; i < els.length; i++)
+            els[i].setAttribute(attrName,attrVal);
+    };
+    
+    // appends a value to an attribute for all elements in a collection
+    // can be used to append class name
+    appendAttributeOnAll = function(els, attrName, attrVal)
+    {
+        for (var i=0; i < els.length; i++)
+        {
+            var curr = els[i].getAttribute(attrName);
+            els[i].setAttribute(attrName, curr + ' ' + attrVal);
+        }
+    };
+    
+    // get element associated with an item property's "button"
+    getItemFieldButton = function(field)
+    {
+        var itms = document.getElementsByClassName(field);
+        return itms[0].getElementsByClassName("sys_f_input_image");
+    };
+    
+    // replace icon on an item property's "button"
+    updateItemFieldIcon = function(field,icon)
+    {
+        var btn = getItemFieldButton(field);
+        setAttributeOnAll(btn,'src',icon);
+        return btn;
+    };
+
+////////////////////// Override default styles /////////////////////////////
+
+    // inline label style
+    var labels = document.getElementsByClassName("sys_f_label");
+    setAttributeOnAll(labels,'style','');
+    appendAttributeOnAll(labels,'class','my_label');
+    
+    // default select style 
+    var selects = document.getElementsByClassName('sys_f_select');
+    replaceClass(selects,'sys_f_select','my_select');
+    
+    selects = document.getElementsByClassName('sys_f_div_select');
+    replaceClass(selects,'sys_f_div_select','my_select_div');
+        
+    // default date select style with custom button icon and class
+    var cals = document.getElementsByClassName("sys_f_input_image_calendar_ff");
+    setAttributeOnAll(cals,'src',dateBtn);
+    replaceClass(cals,'sys_f_input_image_calendar_ff',' my_cal_btn_ff');
+    
+    // default item field styles (managed_by_id)
+    var btn = updateItemFieldIcon('managed_by_id',searchBtn);
+    appendAttributeOnAll(btn,'class','my_search_btn');
+    
+    // default item field styles (owned_by_id)
+    btn = updateItemFieldIcon('owned_by_id',searchBtn);
+    appendAttributeOnAll(btn,'class','my_search_btn');
+
+////////////////////// End ///////////////////////////////////////////////]]></method_code>
+  <method_type>JavaScript</method_type>
+  <name>labs_StyleForm</name>
+ </Item>
+</AML>
