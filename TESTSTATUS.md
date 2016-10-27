@@ -12,5 +12,5 @@ Indicates the result of the latest testing. Projects are tested in the version t
 
             | IE 11      | FF 38 ESR  | Chrome     
 ------------|------------|------------|------------
-Aras 11 SP7 |  |  |
-Aras 11 SP5 |  |  | 
+Aras 11 SP7 | :heavy_exclamation_mark: | :heavy_check_mark: | :heavy_exclamation_mark:
+Aras 11 SP5 | :heavy_exclamation_mark: | :heavy_check_mark: | :heavy_minus_sign:
