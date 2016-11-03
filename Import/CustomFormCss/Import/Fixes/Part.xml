@@ -267,73 +267,52 @@ function createNewRevision()
         <font_size>8pt</font_size>
         <font_weight>bold</font_weight>
         <html_code>
-          <![CDATA[<img id="myIcon" name="myIcon" src="../customer/svg/calendar.svg" vspace="20" hspace="20" />
+          <![CDATA[<img id="myIcon" name="myIcon" src="../customer/svg/package.svg" vspace="20" hspace="20" />
 
 <script>
-
   chooseIcon = function()
   {
+    var icn = "../customer/svg/";
+
+    // get classification, gets "none" if getProperty returns null
     var thisItem = document.thisItem;
     var classification = thisItem.getProperty("classification","none");
 
-    //alert("classification = " + classification);
-
+    // get icon fields
     var defIcon = document.getElementById("large_icon_img");
-
     var myIcon = document.getElementById("myIcon");
-    var icn = "../customer/svg/";
 
+    // choose file name
     switch (classification)
     {
       case "none":
-        // show default part icon
+        // choose part icon file
         icn = defIcon.getAttribute("src");
-        myIcon.style.visibility = "visible";
-        myIcon.style.display = "block";
-        defIcon.style.visibility = "hidden";
-
         break;
-
       case "Assembly":
-        myIcon.style.visibility = "visible";
-        myIcon.style.display = "block";
-        defIcon.style.visibility = "hidden";
-
         icn += "package.svg";
         break;
-
       case "Component":
-        myIcon.style.visibility = "visible";
-        myIcon.style.display = "block";
-        defIcon.style.visibility = "hidden";
-
         icn += "circuit-board.svg";
         break;
-
       case "Material":
-        myIcon.style.visibility = "visible";
-        myIcon.style.display = "block";
-        defIcon.style.visibility = "hidden";
-
         icn += "beaker.svg";
         break;
-
       case "Software":
-        myIcon.style.visibility = "visible";
-        myIcon.style.display = "block";
-        defIcon.style.visibility = "hidden";
-
         icn += "file-binary.svg";
         break;
     }
 
+    // style custom icon
     myIcon.setAttribute("src",icn);
+    myIcon.style.visibility = "visible";
+    myIcon.style.display = "block";
+
+    // hide default icon element
+    defIcon.style.visibility = "hidden";
   }
-
-
-
+  // choose icon onLoad
   window.addEventListener("load", chooseIcon);
-
 </script>
 
 ]]>
@@ -359,69 +338,49 @@ function createNewRevision()
         <font_size>8pt</font_size>
         <font_weight>bold</font_weight>
         <html_code>
-          <![CDATA[<span id="ITEM_INFO_INTERNAL_SPAN" class="info_group" style="display:block;">
+          <![CDATA[<span id="ITEM_INFO_INTERNAL_SPAN" class="info_group" style="display:block;"></span>
 
-</span>
 <script>
   populate_ITEM_INFO_INTERNAL_SPAN = function()
   {
     document.getElementById("ITEM_INFO_INTERNAL_SPAN").innerHTML = top.aras.uiDrawItemInfoTable(document.itemType);
     top.aras.uiPopulateInfoTableWithItem(document.item, document);
-
+    // apply customizations in separate function
     style_ITEM_INFO_INTERNAL_SPAN();
   }
-
   style_ITEM_INFO_INTERNAL_SPAN = function()
   {
+    // override default icon style
     var lg_icn = document.getElementById("large_icon_img");
     lg_icn.style = '';
-
+    var tbl = document.getElementById("itemInfoTable");
+    tbl.style.marginTop = "45px";
+    // add element to display styled state
     var container = document.getElementById("ITEM_INFO_INTERNAL_SPAN");
     var stateLabel = document.createElement("span");
     stateLabel.className = "my_state";
     container.appendChild(stateLabel);
-
-    var oldIcon = document.getElementById("large_icon_img");
-    //oldIcon.style.visibility = "hidden";
-
-    var tbl = document.getElementById("itemInfoTable");
-    tbl.style.marginTop = "45px";
-
+    // set value of new state element
     var stateValue = document.getElementById("itemProps$state");
     stateValue = stateValue.textContent;
-    var stateRow = document.getElementById("state_row");
-
     stateLabel.innerHTML = stateValue.toUpperCase();
-    stateLabel.style.fontSize = "16px";
-    stateLabel.style.fontWeight = "bold";
-
+    // style new state element color based on LC state
     if (stateValue == "Released")
-    {
         stateLabel.style.color = "red";
-     }
-
     if (stateValue == "Preliminary")
-    {
         stateLabel.style.color = "green";
-    }
-
-    if (!stateValue)
-    {
-     // stateLabel.style.visibility = "hidden";
-     // stateLabel.style.display = "none";
-    }
-
+    // hide default state property in table
+    var stateRow = document.getElementById("state_row");
     stateRow.style.visibility = "hidden";
     stateRow.style.display = "none";
-
+    // display classification as title
     var thisItem = document.thisItem;
     var classification = thisItem.getProperty("classification","Part");
     var titleEl = document.getElementById("label_span");
     titleEl.innerHTML = classification;
   }
-
+// populate item_info table onLoad
 window.addEventListener("load", populate_ITEM_INFO_INTERNAL_SPAN);
-
 </script>
 ]]>
         </html_code>
