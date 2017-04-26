@@ -10,7 +10,7 @@ See [TESTSTATUS file](./TESTSTATUS.md) for latest testing information.
 Aras 11.0 SP7
 
 #### Versions Tested:
-Aras 11.0 SP7, Aras 11.0 SP5 (open release)
+Aras 11.0 SP9 (open release), Aras 11.0 SP7, Aras 11.0 SP5 (open release)
 
 #### Browsers Tested:
 Internet Explorer 11, Firefox 38 ESR, Chrome
