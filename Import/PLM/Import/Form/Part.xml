@@ -72,6 +72,7 @@
             <name>description</name>
           </Item>
           <Item type="Field" id="1B361D2AA6D04845815AFFD170F9E638" action="add">
+            <display_length>111</display_length>
             <source_id keyed_name="83907DEF8B3044A08BDCBB77B1C0517E" type="Body">83907DEF8B3044A08BDCBB77B1C0517E</source_id>
             <x>565</x>
             <y>130</y>
