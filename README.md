@@ -69,13 +69,14 @@ You are now ready to login to Aras and check out the customized Part form.
 
 1. Log in to Aras as admin.
 2. Click **Design > Parts** in the table of contents (TOC).
-3. Open an existing Part, or create a new Part to view the customized Part form design. It should look something like this:
+3. Open an existing Part, or create a new Part to view the customized Part form design. 
 
 ### Styling Other Forms
 
 Once you have styles defined for one form, you can apply them to other forms as well. These steps demonstrate how to apply the custom styles in this project to the default Document form in Aras.
 
 ![Document Form](./Screenshots/document_form.png)
+
 *The default Document form, without custom styles.*
 
 1. Log in to Aras as admin.
@@ -92,6 +93,7 @@ Once you have styles defined for one form, you can apply them to other forms as 
 Once you apply these steps, your Document form will look something like this:
 
 ![Half Styled Form](./Screenshots/half_styled_form.png)
+
 *The Document form, with custom styles applied. It still needs some manual adjustments.*
 
 Though you've applied your custom styles to the Document form, it still needs a little tweaking before it's ready for end users. Creating whitespace between fields and grouping similar fields will make the form more user-friendly. 
@@ -103,6 +105,7 @@ If you want to create a "field group" as shown in this project, you can create a
 Here's an example of what your final Document form could look like:
 
 ![Styled Document Form](./Screenshots/styled_document_form.png)
+
 *The Document form, with custom styles and manual spacing adjustments.*
 
 ## Contributing
