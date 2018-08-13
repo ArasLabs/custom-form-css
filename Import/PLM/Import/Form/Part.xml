@@ -1,11 +1,9 @@
-<AML>
+﻿<AML>
   <Item type="Form" id="CAF99D0A8E6E44E9A681C38015FACE91" action="edit">
     <category_form>0</category_form>
-    <height>399</height>
     <stylesheet>
       <![CDATA[../styles/default.css]]>
     </stylesheet>
-    <width>784</width>
     <name>Part</name>
     <Relationships>
       <Item type="Body" id="83907DEF8B3044A08BDCBB77B1C0517E" action="edit">
