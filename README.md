@@ -50,6 +50,9 @@ Project | Aras
   * Optional: Enter a description in the Description field.
 8. Enter the path to your local `..\CustomFormCSS\Import\imports.mf` file in the Manifest File field.
 9. Select **CustomFormCSS** in the Available for Import field.
+10. Optional: Select the **com.aras.innovator.solution.PLM** package from the Available for Import field. 
+    * This adds the labs_StyleForm method to the Part form and updates a few fields. Check out the import package to see which fields are updated. 
+    * If you don't import the PLM package, you'll need to manually update the form you want to style.
 10. Select Type = **Merge** and Mode = **Thorough Mode**.
 11. Click **Import** in the top left corner.
 12. Close the Aras Package Import tool.
