@@ -126,6 +126,13 @@ input[type="image"] {
     border-radius: 4px 0px 0px 4px;
 }
 
+.my_button {
+    border-radius: 0px 4px 4px 0px;
+    height: 30px !important;
+    background-color: #3668b1 !important;
+    width: 30px !important;
+}
+
 .info_group {
     background: #E8EEEF;
     color: #000;
