@@ -2,26 +2,27 @@
 
 This project demonstrates how to customize form field appearance with custom CSS.
 
-## Project Details
-
-See [TESTSTATUS file](./TESTSTATUS.md) for latest testing information.
-
-#### Built Using:
-Aras 11.0 SP7
-
-#### Versions Tested:
-Aras 11.0 SP9 (open release), Aras 11.0 SP7, Aras 11.0 SP5 (open release)
-
-#### Browsers Tested:
-Internet Explorer 11, Firefox 38 ESR, Chrome
-
-> Though built and tested using Aras 11.0 SP7, this project should function in older releases of Aras 11.0.
-
 ## How It Works
 
-This project contains two parts - a code tree overlay and an import package. The code tree overlay adds a custom CSS file and several SVG files to the `Innovator\Client\customer` folder. (It is always recommended to store any custom or third party files in the customer folder)
+This project contains two parts - a code tree overlay and an import package. The code tree overlay adds a custom CSS file and several SVG files to the `Innovator\Client\customer` folder. (It is always recommended to store any custom or third party files in the customer folder.)
 
 The import package updates the Part form properties to use the custom CSS file added by the code tree overlay. It also adds a Form Event method to override some of the default CSS classes.
+
+## History
+
+Release | Notes
+--------|--------
+[v1.2](https://github.com/ArasLabs/custom-form-css/releases/tag/v1.2) | Custom JavaScript function definitions migrated from Field script tags to the labs_StyleForm Form Event.
+[v1.1](https://github.com/ArasLabs/custom-form-css/releases/tag/v1.1) | Code refactored to separate content and presentation.
+[v1.0](https://github.com/ArasLabs/custom-form-css/releases/tag/v1.0) | Initial release.
+
+#### Supported Aras Versions
+
+Project | Aras
+--------|------
+[v1.2](https://github.com/ArasLabs/custom-form-css/releases/tag/v1.2) | 11.0 SP9, 11.0 SP7, 11.0 SP5
+[v1.1](https://github.com/ArasLabs/custom-form-css/releases/tag/v1.1) | 11.0 SP7, 11.0 SP5
+[v1.0](https://github.com/ArasLabs/custom-form-css/releases/tag/v1.0) | 11.0 SP7, 11.0 SP5
 
 ## Installation
 
