@@ -1,6 +1,7 @@
 /*
   Aras Labs
   Eli Donahue - 10/27/16
+  Updated for Aras 11 SP12 - 8/13/18
 
   Custom CSS to override the default Aras form CSS
   All sys_f_* classes can be found in Innovator\Client\styles\default.css
@@ -94,11 +95,35 @@ input[type="image"] {
 /* Custom class CSS */
 
 .my_label {
-    margin-bottom: 8px;
     font-weight: bold;
+    font-size: 8pt;
 }
 
 .my_select {
+    background: rgba(255, 255, 255, .1);
+    border: none;
+    border-radius: 4px 0px 0px 4px;
+    margin: 0;
+    outline: 0;
+    padding: 7px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    border: 1px solid #D9DEDF;
+    color: #000;
+
+    -webkit-appearance: menulist-button;
+    height: 30px;
+
+    /* subtract width of button from item and dropdown fields */
+    width: calc(100% - 30px) !important;
+}
+
+.my_custom_span {
     background: rgba(255, 255, 255, .1);
     border: none;
     border-radius: 4px;
@@ -124,6 +149,13 @@ input[type="image"] {
 .managed_by_id,
 .sys_f_input_calendar {
     border-radius: 4px 0px 0px 4px;
+}
+
+.my_button {
+    border-radius: 0px 4px 4px 0px;
+    height: 30px !important;
+    background-color: #3668b1 !important;
+    width: 30px !important;
 }
 
 .info_group {
