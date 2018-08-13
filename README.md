@@ -57,11 +57,47 @@ You are now ready to login to Aras and check out the customized Part form.
 
 ## Usage
 
+### Viewing the Styled Form
+
+![Customized Part Form](./Screenshots/custom_part_form.PNG)
+
 1. Log in to Aras as admin.
 2. Click **Design > Parts** in the table of contents (TOC).
 3. Open an existing Part, or create a new Part to view the customized Part form design. It should look something like this:
 
-![Customized Part Form](./Screenshots/custom_part_form.PNG)
+### Styling Other Forms
+
+Once you have styles defined for one form, you can apply them to other forms as well. These steps demonstrate how to apply the custom styles in this project to the default Document form in Aras.
+
+![Document Form](./Screenshots/document_form.png)
+*The default Document form, without custom styles.*
+
+1. Log in to Aras as admin.
+2. Click **Administration > Forms** in the TOC.
+3. Search for the Document form, then open and lock it.
+4. Add the labs_StyleForm method as an **onLoad** form event.
+5. In the **Form Body** tab, enter the following CSS in the CSS field:
+
+    ```(css)
+    @import url("../styles/default.css"); 
+    @import url("../customer/myStyles.css");
+    ```
+
+Once you apply these steps, your Document form will look something like this:
+
+![Half Styled Form](./Screenshots/half_styled_form.png)
+*The Document form, with custom styles applied. It still needs some manual adjustments.*
+
+Though you've applied your custom styles to the Document form, it still needs a little tweaking before it's ready for end users. Creating whitespace between fields and grouping similar fields will make the form more user-friendly. 
+
+If you want to create a "field group" as shown in this project, you can create an HTML field with a div and the "user_group" or "info_group" CSS classes. You can also add these classes to existing fields, like the item_info field. 
+
+>Note that these field groups only group fields *visually* - the fields "inside" these boxes won't drag like if they belonged to a groupbox field.
+
+Here's an example of what your final Document form could look like:
+
+![Styled Document Form](./Screenshots/styled_document_form.png)
+*The Document form, with custom styles and manual spacing adjustments.*
 
 ## Contributing
 
