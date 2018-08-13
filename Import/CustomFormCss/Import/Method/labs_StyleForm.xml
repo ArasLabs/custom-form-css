@@ -62,11 +62,16 @@
     var labels = document.getElementsByClassName("sys_f_label");
     setAttributeOnAll(labels, 'style', '');
     appendAttributeOnAll(labels, 'class', 'my_label');
+    
+    // required in 11 SP12+ to style dropdown fields & item fields
+    labels = document.getElementsByClassName("aras-field__label");
+    setAttributeOnAll(labels, 'style', '');
+    appendAttributeOnAll(labels, 'class', 'my_label');
 
     // default select style 
     var selects = document.getElementsByClassName('sys_f_select');
     replaceClass(selects, 'sys_f_select', 'my_select');
-
+    
     selects = document.getElementsByClassName('sys_f_div_select');
     replaceClass(selects, 'sys_f_div_select', 'my_select_div');
 
