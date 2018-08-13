@@ -12,6 +12,7 @@ The import package updates the Part form properties to use the custom CSS file a
 
 Release | Notes
 --------|--------
+[v2.0.0](https://github.com/ArasLabs/custom-form-css/releases/tag/v2.0.0) | Updated to support Aras 11 SP12 and 11 SP14. The introduction of type-ahead functionality changed certain client controls, so we updated the javascript and CSS used to style these fields.
 [v1.2](https://github.com/ArasLabs/custom-form-css/releases/tag/v1.2) | Custom JavaScript function definitions migrated from Field script tags to the labs_StyleForm Form Event.
 [v1.1](https://github.com/ArasLabs/custom-form-css/releases/tag/v1.1) | Code refactored to separate content and presentation.
 [v1.0](https://github.com/ArasLabs/custom-form-css/releases/tag/v1.0) | Initial release.
@@ -20,6 +21,7 @@ Release | Notes
 
 Project | Aras
 --------|------
+[v2.0.0](https://github.com/ArasLabs/custom-form-css/releases/tag/v2.0.0) | 11.0 SP12, 11.0 SP14
 [v1.2](https://github.com/ArasLabs/custom-form-css/releases/tag/v1.2) | 11.0 SP9, 11.0 SP7, 11.0 SP5
 [v1.1](https://github.com/ArasLabs/custom-form-css/releases/tag/v1.1) | 11.0 SP7, 11.0 SP5
 [v1.0](https://github.com/ArasLabs/custom-form-css/releases/tag/v1.0) | 11.0 SP7, 11.0 SP5
@@ -41,13 +43,13 @@ Project | Aras
 1. Backup your code tree and store the backup in a safe place.
 2. Copy the Innovator folder from the project's CodeTree subdirectory.
 3. Paste the Innovator folder into the root directory of your Aras installation.
-  * Tip: This is the same directory that contains the InnovatorServerConfig.xml file.
+    * Tip: This is the same directory that contains the InnovatorServerConfig.xml file.
 4. Backup your database and store the BAK file in a safe place.
 5. Open up the Aras Package Import tool.
 6. Enter your login credentials and click **Login**
-  * _Note: You must login as root for the package import to succeed!_
+    * _Note: You must login as root for the package import to succeed!_
 7. Enter the package name in the TargetRelease field.
-  * Optional: Enter a description in the Description field.
+    * Optional: Enter a description in the Description field.
 8. Enter the path to your local `..\CustomFormCSS\Import\imports.mf` file in the Manifest File field.
 9. Select **CustomFormCSS** in the Available for Import field.
 10. Optional: Select the **com.aras.innovator.solution.PLM** package from the Available for Import field. 
