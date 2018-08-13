@@ -28,7 +28,7 @@
           </Item>
           <Item type="Field" id="74753A9B28324AE4AA0B608F55755441" action="add">
             <html_code>
-              <![CDATA[<span class="sys_view_file_link my_select" id="cost_basis" style="display:inline-block; width:114px;" onclick="window.showGoalsTab();"></span>]]>
+              <![CDATA[<span class="sys_view_file_link my_custom_span" id="cost_basis" style="display:inline-block; width:114px;" onclick="window.showGoalsTab();"></span>]]>
             </html_code>
             <label xml:lang="en">
               Cost Basis</label>
@@ -182,7 +182,7 @@
             <font_size>8pt</font_size>
             <font_weight>bold</font_weight>
             <html_code>
-              <![CDATA[<span class="user_group"> </span>]]>
+              <![CDATA[<span class="user_group"></span>]]>
             </html_code>
             <is_disabled>0</is_disabled>
             <is_visible>1</is_visible>
