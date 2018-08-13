@@ -70,11 +70,12 @@
     appendAttributeOnAll(labels, 'class', 'my_label');
 
     // default select style 
-    var selects = document.getElementsByClassName('sys_f_select');
-    replaceClass(selects, 'sys_f_select', 'my_select');
+    var selects = document.getElementsByClassName('aras-filter-list__input');
+    replaceClass(selects, 'aras-filter-list__input', 'my_select ');
+
+    selects = document.getElementsByClassName('aras-dropdown-container');
+    replaceClass(selects, 'aras-dropdown-container', ' my_select_div');
     
-    selects = document.getElementsByClassName('sys_f_div_select');
-    replaceClass(selects, 'sys_f_div_select', 'my_select_div');
     // style dropdown and item field buttons
     var buttons = document.getElementsByClassName('aras-filter-list__button');
     appendAttributeOnAll(buttons, 'class', 'my_button');
