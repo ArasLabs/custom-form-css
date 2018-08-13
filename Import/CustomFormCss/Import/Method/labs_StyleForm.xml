@@ -46,7 +46,8 @@
     // get element associated with an item property's "button"
     getItemFieldButton = function (field) {
         var itms = document.getElementsByClassName(field);
-        return itms[0].getElementsByClassName("sys_f_input_image");
+        var parentEl = itms[0].parentElement;
+        return parentEl.getElementsByTagName("button");
     };
 
     // replace icon on an item property's "button"
@@ -62,13 +63,25 @@
     var labels = document.getElementsByClassName("sys_f_label");
     setAttributeOnAll(labels, 'style', '');
     appendAttributeOnAll(labels, 'class', 'my_label');
+    
+    // required in 11 SP12+ to style dropdown fields & item fields
+    labels = document.getElementsByClassName("aras-field__label");
+    setAttributeOnAll(labels, 'style', '');
+    appendAttributeOnAll(labels, 'class', 'my_label');
 
     // default select style 
-    var selects = document.getElementsByClassName('sys_f_select');
-    replaceClass(selects, 'sys_f_select', 'my_select');
+    var selects = document.getElementsByClassName('aras-filter-list__input');
+    replaceClass(selects, 'aras-filter-list__input', 'my_select ');
 
-    selects = document.getElementsByClassName('sys_f_div_select');
-    replaceClass(selects, 'sys_f_div_select', 'my_select_div');
+    selects = document.getElementsByClassName('aras-dropdown-container');
+    replaceClass(selects, 'aras-dropdown-container', ' my_select_div');
+    
+    // style dropdown and item field buttons
+    var buttons = document.getElementsByClassName('aras-filter-list__button');
+    appendAttributeOnAll(buttons, 'class', 'my_button');
+    
+    buttons = document.getElementsByClassName('aras-filter-list__button_ellipsis');
+    appendAttributeOnAll(buttons, 'class', 'my_button');
 
     // default date select style with custom button icon and class
     var cals = document.getElementsByClassName("sys_f_input_image_calendar_ff");
