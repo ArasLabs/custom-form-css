@@ -34,7 +34,6 @@ input[type="url"],
 textarea,
 select {
     background: rgba(255, 255, 255, .1);
-    border: none;
     border-radius: 4px;
     margin: 0;
     outline: 0;
@@ -44,7 +43,6 @@ select {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     background-color: #e8eeef;
-    color: #8a97a0;
     -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
     border: 1px solid #D9DEDF;
@@ -101,7 +99,6 @@ input[type="image"] {
 
 .my_select {
     background: rgba(255, 255, 255, .1);
-    border: none;
     border-radius: 4px 0px 0px 4px;
     margin: 0;
     outline: 0;
@@ -110,7 +107,6 @@ input[type="image"] {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     background-color: #e8eeef;
-    color: #8a97a0;
     -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
     border: 1px solid #D9DEDF;
@@ -125,7 +121,6 @@ input[type="image"] {
 
 .my_custom_span {
     background: rgba(255, 255, 255, .1);
-    border: none;
     border-radius: 4px;
     margin: 0;
     outline: 0;
@@ -135,7 +130,6 @@ input[type="image"] {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     background-color: #e8eeef;
-    color: #8a97a0;
     -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
     border: 1px solid #D9DEDF;
