@@ -33,8 +33,6 @@ input[type="time"],
 input[type="url"],
 textarea,
 select {
-    background: rgba(255, 255, 255, .1);
-    border: none;
     border-radius: 4px;
     margin: 0;
     outline: 0;
@@ -43,8 +41,7 @@ select {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    background-color: #e8eeef;
-    color: #8a97a0;
+    background: #e8eeef;
     -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
     border: 1px solid #D9DEDF;
@@ -82,7 +79,7 @@ input[type="image"] {
 
 input[type="image"] {
     padding: 5px 5px 5px 5px;
-    border-radius: 0px 4px 4px 0px;
+    border-radius: 0 4px 4px 0;
 }
 
 input[type="submit"]:hover,
@@ -100,17 +97,14 @@ input[type="image"] {
 }
 
 .my_select {
-    background: rgba(255, 255, 255, .1);
-    border: none;
-    border-radius: 4px 0px 0px 4px;
+    border-radius: 4px 0 0 4px;
     margin: 0;
     outline: 0;
     padding: 7px;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    background-color: #e8eeef;
-    color: #8a97a0;
+    background: #e8eeef;
     -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
     border: 1px solid #D9DEDF;
@@ -124,8 +118,6 @@ input[type="image"] {
 }
 
 .my_custom_span {
-    background: rgba(255, 255, 255, .1);
-    border: none;
     border-radius: 4px;
     margin: 0;
     outline: 0;
@@ -134,8 +126,7 @@ input[type="image"] {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    background-color: #e8eeef;
-    color: #8a97a0;
+    background: #e8eeef;
     -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
     border: 1px solid #D9DEDF;
@@ -148,11 +139,11 @@ input[type="image"] {
 .owned_by_id,
 .managed_by_id,
 .sys_f_input_calendar {
-    border-radius: 4px 0px 0px 4px;
+    border-radius: 4px 0 0 4px;
 }
 
 .my_button {
-    border-radius: 0px 4px 4px 0px;
+    border-radius: 0 4px 4px 0;
     height: 30px !important;
     background-color: #3668b1 !important;
     width: 30px !important;
@@ -166,7 +157,7 @@ input[type="image"] {
     display: inline-block;
     margin-left: 10px;
     margin-top: 15px;
-    border-radius: 15px 15px 15px 0px;
+    border-radius: 15px 15px 15px 0;
     border: 1px solid #D9DEDF;
 }
 
@@ -176,7 +167,7 @@ input[type="image"] {
     display: inline-block;
     margin-left: 10px;
     margin-top: 15px;
-    border-radius: 15px 15px 15px 0px;
+    border-radius: 15px 15px 15px 0;
     border: 2px solid #D9DEDF;
 }
 
@@ -203,11 +194,11 @@ input[type="image"] {
 
 /* Style for custom icons added by CustomFormCSS import package */
 #myIcon {
-  visibility: hidden;
-  height: 80px;
-  width: 80px;
-  position:absolute;
-  top:40px;
-  left:10px;
-  z-index:2;
+    visibility: hidden;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    z-index: 2;
 }
