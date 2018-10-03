@@ -4,7 +4,7 @@ This project demonstrates how to customize form field appearance with custom CSS
 
 ## How It Works
 
-This project contains two parts - a code tree overlay and an import package. The code tree overlay adds a custom CSS file and several SVG files to the `Innovator\Client\customer` folder. (It is always recommended to store any custom or third party files in the customer folder.)
+This project contains two parts - a code tree overlay and an import package. The code tree overlay adds a custom CSS file and several SVG files to the `Innovator\Client\customer` folder. (It is always recommended to store any custom or third-party files in the customer folder.)
 
 The import package updates the Part form properties to use the custom CSS file added by the code tree overlay. It also adds a Form Event method to override some of the default CSS classes.
 
@@ -12,7 +12,7 @@ The import package updates the Part form properties to use the custom CSS file a
 
 Release | Notes
 --------|--------
-[v2.0.0](https://github.com/ArasLabs/custom-form-css/releases/tag/v2.0.0) | Updated to support Aras 11 SP12 and 11 SP14. The introduction of type-ahead functionality changed certain client controls, so we updated the javascript and CSS used to style these fields.
+[v2.0.0](https://github.com/ArasLabs/custom-form-css/releases/tag/v2.0.0) | Updated to support Aras 11 SP12 and 11 SP14. The introduction of type-ahead functionality changed certain client controls, so we updated the JavaScript and CSS used to style these fields.
 [v1.2](https://github.com/ArasLabs/custom-form-css/releases/tag/v1.2) | Custom JavaScript function definitions migrated from Field script tags to the labs_StyleForm Form Event.
 [v1.1](https://github.com/ArasLabs/custom-form-css/releases/tag/v1.1) | Code refactored to separate content and presentation.
 [v1.0](https://github.com/ArasLabs/custom-form-css/releases/tag/v1.0) | Initial release.
@@ -40,14 +40,14 @@ Project | Aras
 
 ### Install Steps
 
-1. Backup your code tree and store the backup in a safe place.
+1. Back up your code tree and store the backup in a safe place.
 2. Copy the Innovator folder from the project's CodeTree subdirectory.
 3. Paste the Innovator folder into the root directory of your Aras installation.
     * Tip: This is the same directory that contains the InnovatorServerConfig.xml file.
-4. Backup your database and store the BAK file in a safe place.
+4. Back up your database and store the BAK file in a safe place.
 5. Open up the Aras Package Import tool.
 6. Enter your login credentials and click **Login**
-    * _Note: You must login as root for the package import to succeed!_
+    * _Note: You must log in as root for the package import to succeed!_
 7. Enter the package name in the TargetRelease field.
     * Optional: Enter a description in the Description field.
 8. Enter the path to your local `..\CustomFormCSS\Import\imports.mf` file in the Manifest File field.
@@ -59,7 +59,7 @@ Project | Aras
 11. Click **Import** in the top left corner.
 12. Close the Aras Package Import tool.
 
-You are now ready to login to Aras and check out the customized Part form.
+You are now ready to log in to Aras and check out the customized Part form.
 
 ## Usage
 
@@ -114,7 +114,7 @@ Here's an example of what your final Document form could look like:
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request
+5. Submit a pull request.
 
 For more information on contributing to this project, another Aras Labs project, or any Aras Community project, shoot us an email at araslabs@aras.com.
 
@@ -124,4 +124,4 @@ Created by Eli Donahue for Aras Labs. @EliJDonahue
 
 ## License
 
-Aras Labs projects are published to Github under the MIT license. See the [LICENSE file](./LICENSE.md) for license rights and limitations.
+Aras Labs projects are published to GitHub under the MIT license. See the [LICENSE file](./LICENSE.md) for license rights and limitations.
