@@ -194,11 +194,11 @@ input[type="image"] {
 
 /* Style for custom icons added by CustomFormCSS import package */
 #myIcon {
-  visibility: hidden;
-  height: 80px;
-  width: 80px;
-  position:absolute;
-  top:40px;
-  left:10px;
-  z-index:2;
+    visibility: hidden;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    z-index: 2;
 }
