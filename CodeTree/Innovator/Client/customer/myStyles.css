@@ -80,7 +80,7 @@ input[type="image"] {
 
 input[type="image"] {
     padding: 5px 5px 5px 5px;
-    border-radius: 0px 4px 4px 0px;
+    border-radius: 0 4px 4px 0;
 }
 
 input[type="submit"]:hover,
@@ -99,7 +99,7 @@ input[type="image"] {
 
 .my_select {
     background: rgba(255, 255, 255, .1);
-    border-radius: 4px 0px 0px 4px;
+    border-radius: 4px 0 0 4px;
     margin: 0;
     outline: 0;
     padding: 7px;
@@ -142,11 +142,11 @@ input[type="image"] {
 .owned_by_id,
 .managed_by_id,
 .sys_f_input_calendar {
-    border-radius: 4px 0px 0px 4px;
+    border-radius: 4px 0 0 4px;
 }
 
 .my_button {
-    border-radius: 0px 4px 4px 0px;
+    border-radius: 0 4px 4px 0;
     height: 30px !important;
     background-color: #3668b1 !important;
     width: 30px !important;
@@ -160,7 +160,7 @@ input[type="image"] {
     display: inline-block;
     margin-left: 10px;
     margin-top: 15px;
-    border-radius: 15px 15px 15px 0px;
+    border-radius: 15px 15px 15px 0;
     border: 1px solid #D9DEDF;
 }
 
@@ -170,7 +170,7 @@ input[type="image"] {
     display: inline-block;
     margin-left: 10px;
     margin-top: 15px;
-    border-radius: 15px 15px 15px 0px;
+    border-radius: 15px 15px 15px 0;
     border: 2px solid #D9DEDF;
 }
 
