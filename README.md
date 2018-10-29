@@ -111,7 +111,7 @@ Here's an example of what your final Document form could look like:
 ## Contributing
 
 1. Fork it!
-2.  Clone your copy of the repository: `git clone https://github.com/YOUR-USERNAME/custom-form-css.git`
+2. Clone your copy of the repository: `git clone https://github.com/YOUR-USERNAME/custom-form-css.git`
 3. Create your feature branch: `git checkout -b my-new-feature`
 4. Commit your changes: `git commit -am 'Add some feature'`
 5. Push to the branch: `git push origin my-new-feature`
