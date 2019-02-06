@@ -21,7 +21,7 @@ Release | Notes
 
 Project | Aras
 --------|------
-[v2.0.0](https://github.com/ArasLabs/custom-form-css/releases/tag/v2.0.0) | 11.0 SP12, 11.0 SP14
+[v2.0.0](https://github.com/ArasLabs/custom-form-css/releases/tag/v2.0.0) | 11.0 SP12, 11.0 SP14, 11.0 SP15
 [v1.2](https://github.com/ArasLabs/custom-form-css/releases/tag/v1.2) | 11.0 SP9, 11.0 SP7, 11.0 SP5
 [v1.1](https://github.com/ArasLabs/custom-form-css/releases/tag/v1.1) | 11.0 SP7, 11.0 SP5
 [v1.0](https://github.com/ArasLabs/custom-form-css/releases/tag/v1.0) | 11.0 SP7, 11.0 SP5
